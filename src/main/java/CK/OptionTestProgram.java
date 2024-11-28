@@ -23,7 +23,7 @@ public class OptionTestProgram {
     final boolean isHelp = false;
 
     public static void main(String[] args) {
-        LOG.info("JSONManipulator started");
+        LOG.info("Test Project started");
         options.addOption(help);
 
         // Create a CommandLineParser to parse the command line arguments
