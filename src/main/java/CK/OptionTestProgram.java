@@ -14,13 +14,13 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 
 public class OptionTestProgram {
-    private static Logger LOG = LogManager.getLogger(OptionTestProgram.class);
+    private static final Logger LOG = LogManager.getLogger(OptionTestProgram.class);
 
     // Options
     static final Options options = new Options();
     static Option help = new Option("help", "print this message");
 
-    final boolean isHelp = false;
+    static boolean isHelp = false;
 
     public static void main(String[] args) {
         LOG.info("Test Project started");
@@ -37,9 +37,11 @@ public class OptionTestProgram {
 
             // Check if the "help" option is set
             if(line.hasOption(help)) {
+                isHelp = true;
                 Main.printHelp();
             } else {
                 // TODO: IMPLEMENT
+                LOG.error("Not yet Implemented");
             }
 
         } catch (ParseException exp) {
