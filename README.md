@@ -1,6 +1,6 @@
 # A Test Program in Java
 
-This Program tests some featurues wich could be useful in the future.
+This Program tests some featurues wich could be useful in the future. It purpose is for cmd based programs to pass dynamically arguments 
 
 ## Feautures
 * Options -> for arguments that are to be passed to the main
