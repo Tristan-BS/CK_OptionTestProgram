@@ -17,3 +17,12 @@ This program tests some functions that could be useful in the future. Its purpos
 7. enter the Program arguments like "-help"
 8. Check "Store as project file" if you want to store your Configuration for multiple users in version control maybe?
 9. Click on Apply
+
+
+## Documentation Images
+
+### Output
+![Output Image](documentation/Output.png)
+
+### How to pass Arguments to main
+![Pass Arguments](documentation/PassingArguments.png)
