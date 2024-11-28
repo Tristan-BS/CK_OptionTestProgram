@@ -26,12 +26,16 @@ public class OptionTestProgram {
         LOG.info("JSONManipulator started");
         options.addOption(help);
 
-        CommandLineParser parser = new DefaultParser()Nr;
+        // Create a CommandLineParser to parse the command line arguments
+        CommandLineParser parser = new DefaultParser();
+        // Create an instance of itself to not have the functions static
         OptionTestProgram Main = new OptionTestProgram();
 
         try {
+            // Parse the command line arguments
             CommandLine line = parser.parse(options, args);
 
+            // Check if the "help" option is set
             if(line.hasOption(help)) {
                 Main.printHelp();
             } else {
@@ -39,6 +43,7 @@ public class OptionTestProgram {
             }
 
         } catch (ParseException exp) {
+            // Handle parsing errors
             LOG.error("Parsing somehow failed.  Reason: {}", exp.getMessage());
             Main.printHelp();
             System.exit(0);
@@ -46,6 +51,8 @@ public class OptionTestProgram {
     }
 
     private void printHelp() {
+        // HelpFormatter is used to print the help information
+        // It formats and prints the usage information for the command line options
         HelpFormatter formatter = HelpFormatter.builder().get();
         formatter.printHelp("Command line syntax:", options);
     }
