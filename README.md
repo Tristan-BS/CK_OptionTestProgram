@@ -1,10 +1,10 @@
 # A Test Program in Java
 
-This Program tests some featurues wich could be useful in the future.
+This program tests some functions that could be useful in the future. Its purpose is to enable cmd-based programs to pass arguments dynamically
 
 ## Feautures
 * Options -> for arguments that are to be passed to the main
-* Logging -> LOG.info for example for great loggin ( not sysout eww )
+* Logging -> LOG.info for example for great logging ( not sysout eww )
 * Help -> If parameter -help is passed, all Options will output
 
 ## How to pass arguments
