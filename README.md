@@ -4,7 +4,7 @@ This program tests some functions that could be useful in the future. Its purpos
 
 ## Feautures
 * Options -> for arguments that are to be passed to the main
-* Logging -> LOG.info for example for great loggin ( not sysout eww )
+* Logging -> LOG.info for example for great logging ( not sysout eww )
 * Help -> If parameter -help is passed, all Options will output
 
 ## How to pass arguments
